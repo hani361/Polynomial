@@ -10,8 +10,7 @@ using namespace std;
 ostream& operator<<(ostream& output, const Polynomial& rhs) {
    for (auto it {rhs.polyTerms.crbegin()}; it != rhs.polyTerms.crend(); ++it) {
       int exp_i {it->first};
-      double coef_i {it->second};
-      string temp {" "};
+      double coef_i {it->second};      
 
       output << ' ';
       if (coef_i != 1 && coef_i != -1) {
